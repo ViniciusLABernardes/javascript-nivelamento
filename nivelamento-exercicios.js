@@ -38,7 +38,7 @@ while(contador <= 5){
         contador ++     
 }
 console.log(soma)
-
+console.log("------switch--------")
 let opcoes = "A";
 switch(opcoes){
     case "A": console.log("Opção A selecionada");
@@ -51,4 +51,45 @@ switch(opcoes){
     break;
 }
 opcoes
+
+console.log("------maiscula--------")
+function converterParaMaiusculas(palavra){
+     
+     console.log(palavra.toUpperCase());
+}
+converterParaMaiusculas("cachorro");
+
+console.log("------MAISCULA ARROW--------")
+const converterParaMaiusculasArrow = (palavra2) => palavra2.toUpperCase();
+
+console.log(converterParaMaiusculasArrow("gato"));
+
+console.log("------declarando variavel dentro de funcao--------")
+
+function erroDoido(){
+ let loucura = "arroz";
+}
+//loucura;
+//loucura is not defined = a variavel n conseguiu ser lida fora da funcao pois ela n existe fora dela
+
+console.log("------Funcao callback--------")
+function processarDados(callback){
+    console.log("Processando..");
+    callback();
+}
+
+processarDados(()=> console.log("Processo concluido!"));
+
+
+console.log("------Funcao retornando objeto--------")
+let user = {
+    nome:"JOSE",
+    id:1
+};
+
+async function buscarUsuario(){
     
+    return new Promise(resolve => {setTimeout(() => resolve(user),1000);})
+    
+}
+buscarUsuario().then(console.log);
