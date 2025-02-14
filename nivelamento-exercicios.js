@@ -26,3 +26,15 @@ if(numero > 0){
 }else if(numero == 0){
     console.log("zero")
 }
+
+for(n = 1; n<11; n++){
+    console.log(n)
+}
+let contador = 1
+let soma = 0
+console.log("------while--------")
+while(contador <= 5){
+        soma += contador
+        contador ++     
+}
+console.log(soma)
