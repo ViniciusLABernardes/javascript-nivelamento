@@ -6,6 +6,13 @@ let usuario = {
     email:"vini@email.com",
     senha:"vini123"
 }
+console.log(nome,idade,aprovado,notas,usuario)
 // null = valor nulo é dado a uma variavel para indicar que ela esta vazia ou ainda sem valor valido
 //undefined = valor que ainda não foi indefinido, variavel qual foi declarada mas n foi atribuido nenhum valor
 
+let valorNulo = null;
+let valorIndefinido;
+
+if(valorNulo == null || undefined & valorIndefinido == undefined || null){
+    console.log(valorIndefinido,valorNulo);
+}
