@@ -16,3 +16,13 @@ let valorIndefinido;
 if(valorNulo == null || undefined & valorIndefinido == undefined || null){
     console.log(valorIndefinido,valorNulo);
 }
+
+let numero = -2
+
+if(numero > 0){
+    console.log("positivo")
+}else if(numero < 0){
+    console.log("negativo")
+}else if(numero == 0){
+    console.log("zero")
+}
