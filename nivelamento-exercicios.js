@@ -38,3 +38,17 @@ while(contador <= 5){
         contador ++     
 }
 console.log(soma)
+
+let opcoes = "A";
+switch(opcoes){
+    case "A": console.log("Opção A selecionada");
+    break;
+    case "B": console.log("Opção B selecionada");
+    break;
+    case "C": console.log("Opção C selecionada");
+    break;
+    default: console.log("Opção invalida");
+    break;
+}
+opcoes
+    
